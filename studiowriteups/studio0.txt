@@ -14,38 +14,55 @@ Students in your studio group:
 Below each question, type in your short, to-the-point answers.
 
 Question PS1: 
+Both lines rise more steeply over time, showing a parabola. The time charts are slightly distorted, because 
+other programs might be running at the same time, using computer capacity. 
 
 Question PS2:
+The first plot was a line, and the second is a parabola.
 	
 Question PS3: 
+The plot is generally the same, remaining in the parabola shape, although the time of each trial is different.
 	
 Question PS4: 
+y=nx^2, n is a real number.
 		
 Question PS5: 
+If remove all, the tick count would be the same as linear. Otherwise, it would be parabola. 
 	
 Question A1:
+The curve is flat, meaning that n has no influence on ticks. 
 	
 Question A2:
+No, the time indicates that the time is not constant.
 	
 Question A3:
+No, because each run has a constant tick, but not constant time. 
 	
 Question A4:
+More similar, so it takes linear time. It is looping through the entire array.
 
 Question A5:
+Decimal: log10(n); mark: n. Mark is always slower(or equally). 
 
 Question A6:
+log2(n)+1, 5
 
 Question A7:
+Either vs unary.
 	
 Question C1:
+A parabola. kx^2
 
 Question C2:
+Reflect the times the array grows twice.
 
 Question C3:
+This one. y=5.5x
 	
 Question D1:
+x(x+1)/2, yes
 	
 Question D2:
-
+2n-1, yes
 	
 	

@@ -9,7 +9,7 @@ import timing.utils.IntArrayGenerator;
 public class Quadratic extends QuietAlgorithm {
 
 	private Ticker ticker;
-	public  int    value;
+	public  int    value; 
 
 	public Quadratic() {
 	}
@@ -26,15 +26,19 @@ public class Quadratic extends QuietAlgorithm {
 	 */
 	@Override
 	public void run() {
-		for (int i=0; i < n; ++i) {
-			for (int j=0; j < n; ++j) {
-				//
-				// Statement below takes one operation
-				this.value = this.value + i;
-				ticker.tick();
-			}
-		}	
-	}
+		  ticker.tick();                   // i <- 0
+		  for (int i=0; i < n; ++i) {
+		    ticker.tick();                 // test i < n
+		    ticker.tick();                 // j <- 0
+		    for (int j=0; j < n; ++j) {
+		      ticker.tick();               // test j < n
+		      ticker.tick();               // addition
+		      this.value = this.value + i;
+		      ticker.tick();               // ++j
+		     }
+		    ticker.tick();                 // ++i
+		  }	
+		}
 
 	public String toString() {
 		return "Quadratic " + n;

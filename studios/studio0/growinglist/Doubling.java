@@ -5,7 +5,7 @@ import timing.utils.GenSizes;
 import timing.utils.IntArrayGenerator;
 
 public class Doubling extends Rarrays {
-
+ 
 	/**
 	 * We ask for a new, bigger array that is twice as large as the
 	 * current one.

@@ -12,7 +12,7 @@ public class AddsTwoNumbers extends QuietAlgorithm {
 	protected Ticker ticker;
 	protected long   sum;
 
-	public AddsTwoNumbers() {
+	public AddsTwoNumbers() { 
 
 	}
 

@@ -17,7 +17,7 @@ public class AddLastNoTail extends AddLastBase {
 		this.list = new LinkedList<Integer>(ticker);
 	}
 	
-	public String toString() {
+	public String toString() { 
 		return "List without tail appending " + this.n + " integers";
 	}
 

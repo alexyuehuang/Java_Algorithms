@@ -11,12 +11,15 @@ import timing.Ticker;
  */
 public class LinkedListWithTail<T> implements List<T> {
 	
-	private ListNode<T> head;
+	private ListNode<T> head, tail;
 	private Ticker ticker;
+	public int k;
 	
 	public LinkedListWithTail(Ticker ticker) {
 		this.head = null;   // nothing in our list yet
 		this.ticker = ticker;
+		this.tail=head;
+		this.k=0;
 	}
 
 	/**
@@ -34,7 +37,8 @@ public class LinkedListWithTail<T> implements List<T> {
 			ListNode<T> p = new ListNode<T>();
 			p.value = thing;
 			head = p;
-			ticker.tick(3);  // for the 3 statements above
+			this.tail=p;
+			ticker.tick(4);  // for the 3 statements above
 		}
 		else {
 			ListNode<T> q = new ListNode<T>();
@@ -42,17 +46,21 @@ public class LinkedListWithTail<T> implements List<T> {
 			// search for the end of the list -- modify this
 			// code to use (and maintain) the tail pointer!
 			//
-			ListNode<T> p = head;
-			while (p.next != null) {
-				p = p.next;
-				ticker.tick(2);
-			}
-			ticker.tick(1); // for the last test in the "while" loop
-			
-			p.next = q;
-			ticker.tick(4);  // for the 4 statements not part of the "while" loop
+			tail.next=q;
+			tail=tail.next;
+			ticker.tick(2);
+//			ListNode<T> p = head;
+//			while (p.next != null) {
+//				p = p.next;
+//				ticker.tick(2);
+//			}
+//			ticker.tick(1); // for the last test in the "while" loop
+//			
+//			p.next = q;
+//			ticker.tick(4);  // for the 4 statements not part of the "while" loop
 		}
-		ticker.tick(1); // for outermost "if" test
+		k++;
+		ticker.tick(2); // for outermost "if" test
 	}
 	
 	/**
@@ -61,14 +69,15 @@ public class LinkedListWithTail<T> implements List<T> {
 	 */
 	@Override
 	public int getSize() {
-		int ans = 0;
-		ticker.tick(2); // init ans; nitialization stmt in for() loop
-		for (ListNode<T> p = this.head; p != null; p = p.next) {
-			ans = ans + 1;
-			ticker.tick(3); // for 3 statements per loop iter
-		}
-		ticker.tick(); // for last test in for loop
-		return ans;
+//		int ans = 0;
+//		ticker.tick(2); // init ans; nitialization stmt in for() loop
+//		for (ListNode<T> p = this.head; p != null; p = p.next) {
+//			ans = ans + 1;
+//			ticker.tick(3); // for 3 statements per loop iter
+//		}
+//		ticker.tick(); // for last test in for loop
+		ticker.tick();
+		return k;
 	}
 
 	/**

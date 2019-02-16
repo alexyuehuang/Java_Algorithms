@@ -13,24 +13,25 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: T(n)=2T(n-1)+2
 
-Question A2:
+Question A2: 2^n
 
-Question A3:
+Question A3: Let T(n)=theta(2^n), then T(n+1)=theta(2^(n+1))
 
-Question B1:
+Question B1: theta(lgn n)
 
-Question B2:
+Question B2: theta(n^2)
 
-Question B3:
+Question B3: theta(n^3)
 
-Question C1:
+Question C1: theta(lgn)
 
-Question C2:
+Question C2: As long as the base case is still constant, it doesn't change. Changing T(1) from 1 to m will get us (m-1)n
+more runs, which will not affect anything
 
-Question C3:
+Question C3: No, because we will increase Tn/n by 1, which doesn't affect anything
 
-Question C4:
+Question C4: No, because we will get n+the original value, so the asymptotic behavior doesn't change
 
-Question C5:
+Question C5: Because they doesn't affect the asymptotic running time. 

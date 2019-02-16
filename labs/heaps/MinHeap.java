@@ -27,6 +27,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		this.array = new Decreaser[maxSize+1];
 		this.size = 0;
 		this.ticker = ticker;
+		ticker.tick(3);
 	}
 
 	//
@@ -63,9 +64,9 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		// You have to now put ans into the heap array
 		//   Recall in class we reduced insert to decrease
-		//
-		// FIXME
-		//
+		array[size]=ans;
+		decrease(size);
+		ticker.tick(3);
 		return ans;
 	}
 
@@ -99,6 +100,26 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//
 		// As described in lecture
 		//
+//		System.out.println(loc);
+//		System.out.println(loc/2);
+//		System.out.println(array[loc]);
+//		System.out.println(array[loc/2]);
+		int g=loc/2;
+		ticker.tick();
+		if(loc>1&&array[loc].getValue().compareTo(array[g].getValue())<0) {
+			Decreaser<T> a=array[loc];
+			int b =array[loc].loc;
+			array[loc].loc=array[loc].loc/2;
+			array[g].loc=b;
+			array[loc]=array[g];
+			array[g]=a;
+			decrease(g);
+			ticker.tick(11);
+		}
+		else {
+			ticker.tick();
+			return;
+		}
 		
 	}
 	
@@ -116,9 +137,12 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 		//    Fix up the heap as described in lecture.
 		//    Be sure to store null in an array slot if it is no longer
 		//      part of the active heap
-		//
-		// FIXME
-		//
+		array[1]=array[size];
+		array[1].loc = 1;
+		array[size]=null;
+		size--;
+		heapify(1);
+		ticker.tick(6);
 		return ans;
 	}
 
@@ -132,8 +156,50 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 	private void heapify(int where) {
 		//
 		// As described in lecture
-		//  FIXME
-		//
+		if(where*2+1<=size) {
+		if(array[where].getValue().compareTo(array[2*where].getValue())>0&&array[2*where].getValue().compareTo(array[2*where+1].getValue())<0) {
+			Decreaser<T> a=array[where];
+			array[where].loc=2*where;
+			array[2*where].loc=where;
+			array[where]=array[2*where];
+			array[where*2]=a;
+			heapify(where*2);
+			ticker.tick(14);
+		}
+		else if(array[where*2+1].getValue()==null&&array[where].getValue().compareTo(array[2*where].getValue())>0) {
+			Decreaser<T> a=array[where];
+			array[where].loc=2*where;
+			array[2*where].loc=where;
+			array[where]=array[2*where];
+			array[where*2]=a;
+			heapify(where*2);
+			ticker.tick(12);
+		}
+		else if(array[where].getValue().compareTo(array[2*where+1].getValue())>0) {
+			Decreaser<T> a=array[where];
+			array[where].loc=2*where+1;
+			array[2*where+1].loc=where;
+			array[where]=array[2*where+1];
+			array[2*where+1]=a;
+			heapify(where*2+1);
+			ticker.tick(10);
+		}
+		}
+		else if(where*2<=size) {
+			ticker.tick();
+			if(array[where].getValue().compareTo(array[2*where].getValue())>0) {
+				Decreaser<T> a=array[where];
+				array[where].loc=2*where;
+				array[2*where].loc=where;
+				array[where]=array[2*where];
+				array[2*where]=a;
+				heapify(where*2);
+				ticker.tick(10);
+			}
+		}
+		else {
+			return;
+		}
 	}
 	
 	/**
@@ -141,6 +207,7 @@ public class MinHeap<T extends Comparable<T>> implements PriorityQueue<T> {
 	 * I implemented this for you.  Really, no need to thank me!
 	 */
 	public boolean isEmpty() {
+		ticker.tick();
 		return size == 0;
 	}
 	

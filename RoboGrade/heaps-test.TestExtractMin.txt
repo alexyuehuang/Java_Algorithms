@@ -1,0 +1,25 @@
+-------------------
+CSE247 Robot tester starts testing heaps on 2019-02-20 19:42:33 -0600
+
+========
+Testing in ./GradingRepos/repos/cse247-s19-students-alex.huang: heaps as of 2019-02-16 00:10
+========
+Now in: /Users/jeremie/247HeadTA/cse247-s19-support/GradingRepos/repos/cse247-s19-students-alex.huang
+Your branch is up to date with 'origin/master'.
+HEAD is now at 8dc211e Alex Huang Lab 3
+No local changes to save
+
+Updating 8dc211e..e25acef
+Fast-forward
+ RoboGrade/heaps-test.TestInsert.txt | 120 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 120 insertions(+)
+ create mode 100644 RoboGrade/heaps-test.TestInsert.txt
+Going back in time to: 2019-02-16 00:10
+At hash 8dc211ede4616ba1d0696e246020f946c0b18d11
+
+================
+Lab is not counted -- failed unit tests
+================
+
+CSE247 Robot tester ends testing heaps on 2019-02-20 19:42:34 -0600
+-------------------

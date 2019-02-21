@@ -1,0 +1,120 @@
+-------------------
+CSE247 Robot tester starts testing heaps on 2019-02-20 18:44:17 -0600
+
+========
+Testing in ./GradingRepos/repos/cse247-s19-students-alex.huang: heaps as of Lab3LateInsert|1099628
+========
+Now in: /Users/jeremie/247HeadTA/cse247-s19-support/GradingRepos/repos/cse247-s19-students-alex.huang
+Your branch is up to date with 'origin/master'.
+HEAD is now at 058f2ab Ensured project name is Huang-465329
+No local changes to save
+
+Updating 058f2ab..8dc211e
+Fast-forward
+ coursesupport/timing/examples/Linear.java     |    2 +-
+ coursesupport/timing/examples/Quadratic.java  |   24 +-
+ labs/heaps/MinHeap.java                       |   83 +-
+ labs/heaps/test/TestExtractMin.java           |   64 ++
+ labs/heaps/test/TestInsert.java               |   64 ++
+ labs/heaps/test/TestMinHeap.java              |   77 +-
+ labs/heaps/test/TestUtil.java                 |   94 +++
+ outputs/addstwonumbers-ticks0.csv             |   21 +
+ outputs/addstwonumbers-time0.csv              |   21 +
+ outputs/allocates-ticks0.csv                  |   21 +
+ outputs/allocates-ticks1.csv                  |   21 +
+ outputs/allocates-time0.csv                   |   21 +
+ outputs/allocates-time1.csv                   |   21 +
+ outputs/doubling-ticks0.csv                   | 1000 +++++++++++++++++++++++++
+ outputs/doubling-time0.csv                    | 1000 +++++++++++++++++++++++++
+ outputs/growbyone-ticks0.csv                  | 1000 +++++++++++++++++++++++++
+ outputs/growbyone-time0.csv                   | 1000 +++++++++++++++++++++++++
+ outputs/heapsort-ticks0.csv                   |   36 +
+ outputs/heapsort-ticks1.csv                   |    4 +
+ outputs/heapsort-time0.csv                    |   36 +
+ outputs/heapsort-time1.csv                    |    4 +
+ outputs/linear-ticks0.csv                     |   10 +
+ outputs/linear-ticks1.csv                     |   10 +
+ outputs/linear-ticks2.csv                     |   10 +
+ outputs/linear-time0.csv                      |   10 +
+ outputs/linear-time1.csv                      |   10 +
+ outputs/linear-time2.csv                      |   10 +
+ outputs/list-addlast-notail-ticks0.csv        |   31 +
+ outputs/list-addlast-notail-time0.csv         |   31 +
+ outputs/list-addlast-withtail-ticks0.csv      |   31 +
+ outputs/list-addlast-withtail-ticks1.csv      |   31 +
+ outputs/list-addlast-withtail-ticks2.csv      |   31 +
+ outputs/list-addlast-withtail-ticks3.csv      |   31 +
+ outputs/list-addlast-withtail-time0.csv       |   31 +
+ outputs/list-addlast-withtail-time1.csv       |   31 +
+ outputs/list-addlast-withtail-time2.csv       |   31 +
+ outputs/list-addlast-withtail-time3.csv       |   31 +
+ outputs/quadratic-ticks0.csv                  |   10 +
+ outputs/quadratic-ticks1.csv                  |   10 +
+ outputs/quadratic-ticks2.csv                  |   10 +
+ outputs/quadratic-time0.csv                   |   10 +
+ outputs/quadratic-time1.csv                   |   10 +
+ outputs/quadratic-time2.csv                   |   10 +
+ studios/studio0/allocates/AddsTwoNumbers.java |    2 +-
+ studios/studio0/allocates/Allocates.java      |    2 +-
+ studios/studio0/growinglist/AddOne.java       |    2 +-
+ studios/studio0/growinglist/Doubling.java     |    2 +-
+ studios/studio0/growinglist/Rarrays.java      |   10 +-
+ studios/studio2/AddLastNoTail.java            |    2 +-
+ studios/studio2/AddLastWithTail.java          |    2 +-
+ studios/studio2/lists/LinkedListWithTail.java |   49 +-
+ studios/studio3/OrderedArray.java             |   41 +-
+ studios/studio3/UnorderedList.java            |   33 +-
+ studiowriteups/studio0.txt                    |   19 +-
+ studiowriteups/studio1.txt                    |   25 +-
+ studiowriteups/studio2.txt                    |   25 +-
+ studiowriteups/studio3.txt                    |   18 +-
+ studiowriteups/studio4.txt                    |   23 +-
+ 58 files changed, 5115 insertions(+), 184 deletions(-)
+ create mode 100644 labs/heaps/test/TestExtractMin.java
+ create mode 100644 labs/heaps/test/TestInsert.java
+ create mode 100644 labs/heaps/test/TestUtil.java
+ create mode 100644 outputs/addstwonumbers-ticks0.csv
+ create mode 100644 outputs/addstwonumbers-time0.csv
+ create mode 100644 outputs/allocates-ticks0.csv
+ create mode 100644 outputs/allocates-ticks1.csv
+ create mode 100644 outputs/allocates-time0.csv
+ create mode 100644 outputs/allocates-time1.csv
+ create mode 100644 outputs/doubling-ticks0.csv
+ create mode 100644 outputs/doubling-time0.csv
+ create mode 100644 outputs/growbyone-ticks0.csv
+ create mode 100644 outputs/growbyone-time0.csv
+ create mode 100644 outputs/heapsort-ticks0.csv
+ create mode 100644 outputs/heapsort-ticks1.csv
+ create mode 100644 outputs/heapsort-time0.csv
+ create mode 100644 outputs/heapsort-time1.csv
+ create mode 100644 outputs/linear-ticks0.csv
+ create mode 100644 outputs/linear-ticks1.csv
+ create mode 100644 outputs/linear-ticks2.csv
+ create mode 100644 outputs/linear-time0.csv
+ create mode 100644 outputs/linear-time1.csv
+ create mode 100644 outputs/linear-time2.csv
+ create mode 100644 outputs/list-addlast-notail-ticks0.csv
+ create mode 100644 outputs/list-addlast-notail-time0.csv
+ create mode 100644 outputs/list-addlast-withtail-ticks0.csv
+ create mode 100644 outputs/list-addlast-withtail-ticks1.csv
+ create mode 100644 outputs/list-addlast-withtail-ticks2.csv
+ create mode 100644 outputs/list-addlast-withtail-ticks3.csv
+ create mode 100644 outputs/list-addlast-withtail-time0.csv
+ create mode 100644 outputs/list-addlast-withtail-time1.csv
+ create mode 100644 outputs/list-addlast-withtail-time2.csv
+ create mode 100644 outputs/list-addlast-withtail-time3.csv
+ create mode 100644 outputs/quadratic-ticks0.csv
+ create mode 100644 outputs/quadratic-ticks1.csv
+ create mode 100644 outputs/quadratic-ticks2.csv
+ create mode 100644 outputs/quadratic-time0.csv
+ create mode 100644 outputs/quadratic-time1.csv
+ create mode 100644 outputs/quadratic-time2.csv
+Going back in time to: Lab3LateInsert|1099628
+At hash 2fc7b2e468caf6eab6d63a3a1c96ab5b45a83e13
+
+================
+Lab is not counted -- failed unit tests
+================
+
+CSE247 Robot tester ends testing heaps on 2019-02-20 18:44:19 -0600
+-------------------

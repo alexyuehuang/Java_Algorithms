@@ -1,19 +1,18 @@
 -------------------
-CSE247 Robot tester starts testing heaps on 2019-02-24 00:20:31 -0600
+CSE247 Robot tester starts testing heaps on 2019-02-24 00:39:27 -0600
 
 ========
 Testing in ./GradingRepos/repos/cse247-s19-students-alex.huang: heaps as of 2019-02-16 00:10
 ========
 Now in: /home/coles/git/cse247-support/GradingRepos/repos/cse247-s19-students-alex.huang
 Your branch is up-to-date with 'origin/master'.
-HEAD is now at 547d6e5 robograde
+HEAD is now at 0faab15 robograde
 No local changes to save
 
-Updating 547d6e5..0faab15
+Updating 0faab15..7bd3f46
 Fast-forward
- RoboGrade/heaps-test.TestMinHeap.txt | 218 +++++++++++++++++++++++++++++++++++
- 1 file changed, 218 insertions(+)
- create mode 100644 RoboGrade/heaps-test.TestMinHeap.txt
+ RoboGrade/heaps-test.TestInsert.txt | 22 +++++++++++++---------
+ 1 file changed, 13 insertions(+), 9 deletions(-)
 Going back in time to: 2019-02-16 00:10
 At hash 8dc211ede4616ba1d0696e246020f946c0b18d11
 
@@ -49,12 +48,12 @@ Buildfile: /home/coles/git/cse247-support/build.xml
 test:
     [junit] Running heaps.test.TestInsert
     [junit] Testsuite: heaps.test.TestInsert
-    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec
-    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec
     [junit] 
-    [junit] Testcase: testEmptyHeap took 0.062 sec
-    [junit] Testcase: testInsert took 0.281 sec
-    [junit] Testcase: testLocUpdatedDecrease took 0.02 sec
+    [junit] Testcase: testEmptyHeap took 0.053 sec
+    [junit] Testcase: testInsert took 0.13 sec
+    [junit] Testcase: testLocUpdatedDecrease took 0.024 sec
 
 BUILD SUCCESSFUL
 Total time: 1 second
@@ -62,5 +61,5 @@ Total time: 1 second
 Lab is counted as working
 ================
 
-CSE247 Robot tester ends testing heaps on 2019-02-24 00:20:39 -0600
+CSE247 Robot tester ends testing heaps on 2019-02-24 00:39:34 -0600
 -------------------

@@ -1,18 +1,18 @@
 -------------------
-CSE247 Robot tester starts testing heaps on 2019-02-21 22:03:54 -0600
+CSE247 Robot tester starts testing heaps on 2019-02-24 03:01:11 -0600
 
 ========
 Testing in ./GradingRepos/repos/cse247-s19-students-alex.huang: heaps as of 2019-02-16 00:10
 ========
 Now in: /home/coles/git/cse247-support/GradingRepos/repos/cse247-s19-students-alex.huang
 Your branch is up-to-date with 'origin/master'.
-HEAD is now at 142811b robograde
+HEAD is now at 391e975 robograde
 No local changes to save
 
-Updating 142811b..6c0dd43
+Updating 391e975..62447d2
 Fast-forward
- RoboGrade/heaps-test.TestExtractMin.txt | 190 ++++++++++++++++++++++++++++++--
- 1 file changed, 180 insertions(+), 10 deletions(-)
+ RoboGrade/heaps-test.TestInsert.txt | 30 +++++++++++++++---------------
+ 1 file changed, 15 insertions(+), 15 deletions(-)
 Going back in time to: 2019-02-16 00:10
 At hash 8dc211ede4616ba1d0696e246020f946c0b18d11
 
@@ -33,7 +33,7 @@ compile:
     [javac] Compiling 1 source file to /home/coles/git/cse247-support/GradingRepos/repos/cse247-s19-students-alex.huang/bin
 
 BUILD SUCCESSFUL
-Total time: 1 second
+Total time: 3 seconds
 Buildfile: /home/coles/git/cse247-support/build.xml
 
 compile:
@@ -41,7 +41,7 @@ compile:
     [javac] Compiling 1 source file to /home/coles/git/cse247-support/GradingRepos/repos/cse247-s19-students-alex.huang/bin
 
 BUILD SUCCESSFUL
-Total time: 1 second
+Total time: 3 seconds
 Running test test.TestExtractMin
 Buildfile: /home/coles/git/cse247-support/build.xml
 
@@ -90,7 +90,7 @@ test:
     [junit] Testing with unique vals size 9
     [junit] done
     [junit] Testing with unique vals size 50
-    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.54 sec
     [junit] Output:
     [junit] Testing with duplicates size 0
     [junit] done
@@ -135,7 +135,7 @@ test:
     [junit] done
     [junit] Testing with unique vals size 50
     [junit] 
-    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.54 sec
     [junit] ------------- Standard Output ---------------
     [junit] Testing with duplicates size 0
     [junit] done
@@ -181,15 +181,15 @@ test:
     [junit] Testing with unique vals size 50
     [junit] ------------- ---------------- ---------------
     [junit] 
-    [junit] Testcase: testExtractMinDups took 0.201 sec
-    [junit] Testcase: testExtractMinUniq took 0.022 sec
-    [junit] Testcase: testLocUpdatedHeapify took 0.023 sec
+    [junit] Testcase: testExtractMinDups took 0.394 sec
+    [junit] Testcase: testExtractMinUniq took 0.038 sec
+    [junit] Testcase: testLocUpdatedHeapify took 0.05 sec
 
 BUILD SUCCESSFUL
-Total time: 1 second
+Total time: 2 seconds
 ================
 Lab is counted as working
 ================
 
-CSE247 Robot tester ends testing heaps on 2019-02-21 22:04:01 -0600
+CSE247 Robot tester ends testing heaps on 2019-02-24 03:01:25 -0600
 -------------------

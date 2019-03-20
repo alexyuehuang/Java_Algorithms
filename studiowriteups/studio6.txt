@@ -13,32 +13,33 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: loop: k<n+m if A[i]<B[j], C[k]=A[i]; i++,k++, else C[k]=B[j]....
 
-Question A2:
+Question A2: 
 
-Question A3:
+Question A3: i+j++ each turn, terminate after i+j=m+n-1
 
-Question A4:
+Question A4: i+j from 0 to n+m-1, each time add 1, i+j=k, each time either +i+k, or +j+k
 
-Question A5:
+Question A5: loop invariant: contains every element in both arrays; progress condition: sorted
 
-Question B1:
+Question B1: theta(n)
 
-Question B2:
+Question B2: T(n)=2T(n/2)+cn
 
-Question B3:
+Question B3: T(n)=theta(nlogn), use master method
 
-Question B4:
+Question B4: T(n)=kT(n/k)+cn
 
-Question B5:
+Question B5: It doesn't impact.
 
-Question C1:
+Question C1: theta(nlogn)
 
-Question C2:
+Question C2: Yes. Each time after we get C, we replace A and B with new things, since they are useless
 
-Question C3:
+Question C3: It uses far less extra space when n is very large
 
-Question C4:
+Question C4: heapify n times, from the last element to the top. 
 
-Question C5:
+Question C5: each time extract the next element, putting it to the last one of the heap while maintaining the heap property of
+the part of the heap, each time heapify the rest of the heap. 

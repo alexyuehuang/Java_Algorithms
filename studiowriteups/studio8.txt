@@ -13,38 +13,38 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: The two points having same address will be stored as two points, while they're actually the same point
 
-Question A2:
+Question A2: x_1=x_2 and y_1=y_2
 
-Question A3:
+Question A3: 31x+17y
 
-Question A4:
+Question A4: No, for example, (0,0) and (17,-31)map to same hashcode of 0
 
-Question A5:
+Question A5: x+y, no, because it is too easy for two distinct points to have the same hashcode
 
-Question B1:
+Question B1: 32
 
-Question B2:
+Question B2: Yes, because the maximum hashcode possible is smaller than 2^8*2^24=2^32. No 
 
-Question B3:
+Question B3: Yes, approximately, about 50
 
-Question B4:
+Question B4: not a lot of derivation, basically random
 
-Question C1:
+Question C1: The average is much smaller. 
 
-Question C2:
+Question C2: It is not so randomly distributed. No we cannot 
 
-Question C3:
+Question C3: Some table values would be crowded. Not good for porformance
 
-Question D1:
+Question D1: last 32-k bits
 
-Question D2:
+Question D2: Yes
 
-Question D3:
+Question D3: A bit
 
-Question D4:
+Question D4: they are equal mod A
 
-Question D5:
+Question D5: Yes
 
-Question D6:
+Question D6: Yes

@@ -10,10 +10,11 @@ public class Point {
 		this.y = y;
 	}
 
-    // @Override
-	// public int hashCode() {
-	// compute a hashcode here!
-	//}
+     @Override
+	 public int hashCode() {
+	 int c= 31*this.x+17*this.y;
+	 return c;
+	}
 	
 
 	@Override

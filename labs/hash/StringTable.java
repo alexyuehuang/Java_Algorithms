@@ -1,5 +1,6 @@
 package hash;
 
+
 import java.util.LinkedList;
 
 //
@@ -27,8 +28,7 @@ public class StringTable {
     {
     	this.nBuckets = nBuckets;
     	buckets = new LinkedList[nBuckets];
-	
-    	// TODO - fill in the rest of this method to initialize your table
+    	this.size=0;
     }
     
     
@@ -41,9 +41,23 @@ public class StringTable {
      */
     public boolean insert(Record r) 
     {  
-    	// TODO - implement this method
-	
-    	return false;
+    	int a=this.stringToHashCode(r.key);
+    	int c=this.toIndex(a);
+    	Record k =this.find(r.key);
+    	if(k==(null)) {
+    		if(buckets[c]==(null)) {
+    			buckets[c]=new LinkedList<> ();
+    		}
+    		buckets[c].add(r);
+    	//	System.out.println(r.key+size);
+    	//System.out.println(r.positions);
+    		size++;
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    	
     }
     
     
@@ -55,9 +69,19 @@ public class StringTable {
      */
     public Record find(String key) 
     {
-    	// TODO - implement this method
-	
-    	return null;
+    	int a=this.stringToHashCode(key);
+    	int c=this.toIndex(a);
+    	int b=0;
+    	if(buckets[c]!=null) {
+    		b=buckets[c].size();
+    	}
+    	Record k=null;
+        for (int i=0; i<b; i++) {
+        	if(buckets[c].get(i).key.equals(key)) {
+        		k=buckets[c].get(i);
+        	}
+        }
+        return k;
     }
     
     
@@ -69,7 +93,23 @@ public class StringTable {
      */
     public void remove(String key) 
     {
-    	// TODO - implement this method
+    	int a=this.stringToHashCode(key);
+    	int c=this.toIndex(a);
+    	int b=0;
+    	if(buckets[c]!=null) {
+    		b=buckets[c].size();
+    	}
+    	Record k=null;
+        for (int i=0; i<b; i++) {
+        	if(buckets[c].get(i).key.equals(key)) {
+        		k=buckets[c].get(i);
+        	}
+        }
+        if(k!=null) {
+        	buckets[c].remove(k);
+        	size--;
+        }
+        //System.out.println(key+size);
     }
     
 
@@ -88,9 +128,10 @@ public class StringTable {
      */
     private int toIndex(int hashcode)
     {
-    	// Fill in your own hash function here
-	
-    	return 0;
+    	hashcode=Math.abs(hashcode);
+    	double a=(Math.sqrt(5.0)-1)/2;
+    	double c=(hashcode*a)%1.0;
+    	return (int)(c*nBuckets);
     }
     
     

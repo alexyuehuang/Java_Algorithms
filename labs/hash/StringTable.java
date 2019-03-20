@@ -95,7 +95,7 @@ public class StringTable {
     {
     	int a=this.stringToHashCode(key);
     	int c=this.toIndex(a);
-    	int b=0; 
+    	int b=0;
     	if(buckets[c]!=null) {
     		b=buckets[c].size();
     	}

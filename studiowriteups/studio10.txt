@@ -13,42 +13,58 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: (10(4(31-)(859)(15(12 11 13)(16 - 17))
 
-Question A2:
+Question A2: succ(10): 15 12 11 succ(9): 8 4 10
 
-Question A3:
+Question A3: last deletion: (11(5(1)(8-9)(15(12-13)16)
 
-Question B1:
+Question B1: smallest to largest, reverse
 
-Question B2:
+Question B2: A tree with 1 element, if satisfy property P, is balanced. That basically only concern trees with 1 element.
+Also need to prove n=2 
 
-Question B3:
+Question B3: nl>=nr-1, size cannot differ more than 1. height=log size 
 
-Question B4:
+Question B4: For each tree, the biggest branch has at most n/2+1 elements
 
-Question B5:
+Question B5: No. example: 3(2(1-)-)
 
-Question B6:
+Question B6: middle element
 
-Question B7:
+Question B7: while(length of the array>1): insert n/2; recurrence on [1,n/2], [n/2,n]
+T(n)=2T(n/2)+constant
 
-Question B8:
+Question B8: nlogn
 
-Question C1:
+Question C1: for every subtree, if root=null size=0, else=1+nleft+nright
 
-Question C2:
+Question C2: n 
 
-Question C3:
+Question C3: r=r1+r2+1
 
-Question C4:
+Question C4: 
+while(r!=null)
+if r=key
+break
+if r>key
+insert(r.left)
+else
+insert(r.right)
 
-Question C5:
+if(r=null)
+r=key;
+r.size=1
+while(r!=root)
+r.parent.size++
 
-Question C6:
+Question C5: type 1&2: size-- for every node from deleted upwards. type 3: size-- form succ(key) upwards
 
-Question C7:
+Question C6: h=max(h(T1),h(T2))+1
 
-Question D1:
+Question C7: add-added element have height 1, update everything on its route upwards. remove type 1&2: removed.parent.sze--
+then update everything upward; type 3: same as doing delete succ(key)
 
-Question D2:
+Question D1: if nl=nr: root if nl>nr: left else, right
+
+Question D2: for each subtree, decide where the median is. If not in the root, iterate the subtree. 

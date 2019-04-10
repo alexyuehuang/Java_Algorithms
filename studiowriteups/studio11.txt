@@ -13,9 +13,9 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: Insert each level from the root to leaves. No
 
-Question A2:
+Question A2: Two rotations
 
 Question A3:
 
@@ -31,23 +31,24 @@ Question B2:
 
 Question B3:
 
-Question B4:
+Question B4: We have multiple choices, like pushing up the 2th element or the 3rd
 
-Question C1:
+Question C1: Because every path has the same height, we find the succs by going right once, and go all left, which is the leaf. 
+Not true for AVL because not every path has same height
 
-Question C2:
+Question C2: Because we need an element between 12 and 18
 
-Question C3:
+Question C3: put down 18, get up 19
 
-Question C4:
+Question C4: the left and right neighbor of 15 has >1 elements
 
-Question C5:
+Question C5: its both neighbors have 1 elements
 
-Question C6:
+Question C6: put 19 down with 20
 
-Question C7:
+Question C7: Neighboring node size 1, parent size 1
 
-Question C8:
+Question C8: They do a rotation to make the leaves in right subtree fill in
 
-Question C9:
+Question C9: the root
 

@@ -13,48 +13,48 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: The last one
 
-Question A2:
+Question A2: 4
 
-Question A3:
+Question A3: ((a*128+b)*128+c)*128+d
 
-Question B1:
+Question B1: 5
 
-Question B2:
+Question B2: (sum charAt[i])mod m
 
-Question B3:
+Question B3: 1234 4321 2341 1432 2314
 
-Question B4:
+Question B4: 147440
 
-Question B5:
+Question B5: enter the 147440 combinations above, and they will end up in one table
 
-Question B6:
+Question B6: (-27a+9b-3c+d) mod m
 
-Question B7:
+Question B7: soh eth 11, stx ack 11, etx tab 11, eot ff 11, enq si 11
 
-Question B8:
+Question B8: there are approximately 40 2-digits that get to 0. We do a combination of 10 such things
 
-Question C1:
+Question C1: Any digits of the result will not be predictable, if we use 32 the last 5 digits are predictable
 
-Question C2:
+Question C2: any solution a, b of 31a+b=some number will get the same code
 
-Question C3:
+Question C3: 1 }, 2 ^, 3 ?, 4 space
 
-Question C4:
+Question C4: 4^n, 10 should be sufficient
 
-Question C5:
+Question C5: as long as there are more than 32 possible elements. It is harder if we have very few elements 
 
-Question D1:
+Question D1: a list of bank accounts, where each account name must match actual person
 
-Question D2:
+Question D2: some online website where everyone can register for free
 
-Question D3:
+Question D3: 400000 seconds
 
-Question D4:
+Question D4: No, it can crack up in reasonable time 
 
-Question D5:
+Question D5: 999999(2^32)+1
 
-Question D6:
+Question D6: 2^32 seconds, 136 years
 
-Question D7:
+Question D7: In that way, the two numbers that might originally produce the same hashcode would not. 

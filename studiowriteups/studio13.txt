@@ -13,40 +13,42 @@ Students in your studio group:
 
 Below each question, type in your short, to-the-point answers.
 
-Question A1:
+Question A1: E0 FG1 BD2 AC3
 
-Question A2:
+Question A2: E to FG, F to B, G to D, D to AC, B to c
 
-Question A3:
+Question A3: E8 13, F9 10, G11 12, B1 6, D4 5, A0 7, C2 3
 
-Question B1:
+Question B1: No, have cycles
 
-Question B2:
+Question B2: If v finishes earlier than u, u comes before v in ordering, then u->v
 
-Question B3:
+Question B3: Then we go to v, start v, and after some steps, end v. Because acyclic we cannot reach u in the process,
+therefore v finishes first.
 
-Question B4:
+Question B4: Since we're looking in (u,v), u is by far not finished, by v is already finished, so v finishes first
 
-Question B5:
+Question B5: No, because the map is acyclic
 
-Question B6:
+Question B6: For all the possibilities of v, v finishes earlier than u, which proves our thing. 
 
-Question C1:
+Question C1: ACDBEF
 
-Question C2:
+Question C2: ABECDF, ACBDEF, ABCEDF
 
-Question C3:
+Question C3: search from the last element and goes to the first
 
-Question C4:
+Question C4: vn
 
-Question C5:
+Question C5: First finish
 
-Question C6:
+Question C6: The element in X is the Xth earliest to finish
 
-Question C7:
+Question C7: Start from F, then goes to E or start from E
 
-Question D1:
+Question D1: If exist (vi,vi+1), we cannot put vi+1 before vi; if the edge does not exist, and we also know that we 
+cannot do (vi+1, vi), then the ordering of the two does not matter
 
-Question D2:
+Question D2: Because has unique order, every vi, vi+1 is directly connected, so we can chain them up
 
-Question D3:
+Question D3: Calculate the topographical order, then check for path between any two |V|+|E|

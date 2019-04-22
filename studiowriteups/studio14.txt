@@ -17,19 +17,19 @@ Question A1:
 
 Question A2:
 
-Question A3:
+Question A3: Yes
 
-Question B1:
+Question B1: w(n-1)
 
-Question B2:
+Question B2: Use counting sort instead of heap sort
 
-Question B3:
+Question B3: Basically the same thing, except for the sorting method
 
-Question B4:
+Question B4: 
 
-Question C1:
+Question C1: In regular method we would get cdis=5, but it should be 1. 
 
-Question C2:
+Question C2: No. If the length of two routes are not the same we might get different results
 
 Question C3:
 

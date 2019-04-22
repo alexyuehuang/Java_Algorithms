@@ -98,8 +98,39 @@ public class ShortestPaths {
     	// OK, now it's up to you!
     	// Implement the main loop of Dijkstra's shortest-path algorithm,
     	// recording the parent edges of each vertex in parentEdges.
-    	// FIXME
-    	//
+//    	for (Edge v: startVertex.edgesTo()) {
+//    		int i =weights.get(v);
+//    		Decreaser<VertexAndDist> h = handles.get(v.to);
+//        	VertexAndDist vdi = h.getValue();
+//        	if(i<vdi.distance) {
+//        	h.decrease(new VertexAndDist(vdi.vertex, i));
+//        	if(parentEdges.containsKey(v.to)) {
+//        		parentEdges.replace(v.to, v);
+//        	}
+//        	else{
+//        		parentEdges.put(v.to, v);
+//        	}
+//        	}
+//    	}
+    	int k=pq.size();
+    	while(!pq.isEmpty()&&k>=0) {
+    		VertexAndDist a=pq.extractMin();
+    		for (Edge v: a.vertex.edgesFrom()) {
+        		int i =weights.get(v);
+        		Decreaser<VertexAndDist> h = handles.get(v.to);
+            	VertexAndDist vdi = h.getValue();
+            	if(vdi.distance>i+a.distance) {
+            	h.decrease(new VertexAndDist(vdi.vertex, i+a.distance));
+            	if(parentEdges.containsKey(v.to)) {
+            		parentEdges.replace(v.to, v);
+            	}
+            	else{
+            		parentEdges.put(v.to, v);
+            	}
+            	}
+        	}
+    		k--;
+    	}
     }
     
     
@@ -112,7 +143,11 @@ public class ShortestPaths {
     //
     public LinkedList<Edge> returnPath(Vertex endVertex) {
     	LinkedList<Edge> path = new LinkedList<Edge>();
-	
+    	Vertex end=endVertex;
+    	while(!end.equals(startVertex)) {
+    		path.addFirst(parentEdges.get(end));
+    		end=parentEdges.get(end).from;
+    	}
     	//
     	// FIXME: implement this using the parent edges computed in run()
     	//
